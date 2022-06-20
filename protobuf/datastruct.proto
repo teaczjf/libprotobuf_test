@@ -1,0 +1,38 @@
+/**
+* @file datastruct.proto
+* @brief  this file define all struct same as database table
+* @author Fan Chuanlin, fancl@dscr.com.cn
+* @version 1.0
+* @date 2021-10-24
+*/
+
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
+
+
+//************************user define start***********************************//
+message student
+{
+    string name =1;
+    int32 age =2;
+    string ID =3;
+    float money =4;
+}
+
+
+
+
+message wx_info
+{
+    int32 age =1;
+    string ID =2;
+    float money =3;
+}
+
+message HT_JD
+{
+    string wx_name =1;
+    repeated wx_info infos =2; 
+}

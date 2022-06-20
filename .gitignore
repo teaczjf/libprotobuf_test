@@ -1,0 +1,6 @@
+Build
+/Debug/*
+*.log
+/release/*
+libprotobuf
+libprotobuf_arm
